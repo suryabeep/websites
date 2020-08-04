@@ -1,0 +1,65 @@
+@media only screen and (max-width: 768px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+  .hide-on-large {
+    display: none;
+  }
+}
+
+body {
+  background-color: rgb(60, 60, 60);
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+img {
+  padding-top: 15px;
+}
+
+.bike-card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width:100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(80, 80, 80);
+}
+
+.bike-card div {
+  flex: 1;
+}
+
+.bike-card>a {
+  text-decoration: none;
+  color: rgba(0,0,0,1);
+}
+
+.bike-card-body {
+  color: white;
+  padding: 10px;
+}
+
+.bike-card:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+/* The Sidebar*/
+.list-group-item, .list-group>a.bg-dark:hover{
+  color: rgb(200,200,200);
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    color: white;
+    font-size: 1.5rem;
+}
