@@ -10,6 +10,10 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(60, 60, 60);
   box-sizing: border-box;
@@ -22,31 +26,31 @@ h1 {
 }
 
 img {
-  padding-top: 15px;
+  padding: 15px;
+}
+
+.row {
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .bike-card {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
   width:100%;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(90, 90, 90);
 }
 
-.bike-card div {
-  flex: 1;
-}
-
-.bike-card>a {
+a {
   text-decoration: none;
   color: rgba(0,0,0,1);
 }
 
 .bike-card-body {
+  padding: 15px;
   color: white;
-  padding: 10px;
 }
 
 .bike-card:hover {
@@ -54,8 +58,16 @@ img {
 }
 
 /* The Sidebar*/
-.list-group-item, .list-group>a.bg-dark:hover{
-  color: rgb(200,200,200);
+.list-group>a.bg-dark:hover{
+  color: rgb(60, 60, 60);
+}
+
+#sidebar-wrapper, #sidebar-wrapper.list-group, .list-group-item{
+  background-color: rgb(40, 40, 40);
+}
+
+.list-group-item {
+  color: rgb(220, 220, 220);
 }
 
 #sidebar-wrapper .sidebar-heading {
