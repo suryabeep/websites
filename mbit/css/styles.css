@@ -1,3 +1,15 @@
+@media only screen and (max-width: 767px) {
+    #hide-on-md {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #hide-on-lg {
+        display: none;
+    }
+}
+
 html,
 body {
   height: 100%;
@@ -11,6 +23,7 @@ body {
 
 .navbar {
   padding: .8rem;
+  margin-bottom: 2rem;
   background-color: #e8f1f6;
 }
 
@@ -46,14 +59,15 @@ body {
 /* Carousel */
 .carousel-inner img {
   width: 100%;
-  height: 76%;
-  margin-bottom: 3em;
+/*  height: 75%;*/
+  margin-bottom: 2rem;
 }
 
 .carousel-caption {
-  position: absolute;
+  /*position: absolute;*/
   top: 50%;
   transform: translateY(-50%);
+  bottom: initial;
 }
 
 .carousel-caption h1 {
@@ -64,6 +78,7 @@ body {
 
 .jumbotron {
   margin-top: 2rem;
+  flex-direction: row;
 }
 
 
@@ -72,6 +87,35 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.footer{
+  background: #152F4F;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
 }
 
 /*---Firefox Bug Fix --*/
