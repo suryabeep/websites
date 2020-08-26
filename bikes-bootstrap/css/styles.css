@@ -19,10 +19,6 @@ p {
   color: white;
 }
 
-.footer {
-  padding-top: 2rem;
-}
-
 .padding {
   padding-bottom: 2rem;
 }
@@ -39,19 +35,23 @@ p {
   font-size: 1.1em !important;
 }
 
-.container {
-  max-width: 1000px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
 .welcome {
   width: 75%;
   margin: 0 auto;
   padding-top: 2rem;
+}
+
+.overlay {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../resources/destijl-virago.png);
+  background-size: cover;
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+}
+
+.dropdown-item {
+  color: white;
 }
 
 /* Bike Cards - to be removed eventually*/
@@ -95,32 +95,29 @@ p {
   text-shadow: 1px 1px 10px #000;
 }
 
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
+.footer>.container-fluid {
+  justify-content: center;
+  width: 75%;
 }
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+
+.footer {
+  background: #152F4F;
+  color: white;
 }
-#fixed {
-  background-image: url('resources/ducati_1200.jpg');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
+
+.footer p, a {
+  color: rgb(150, 150, 150);
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+#homepage-bikes {
+  opacity: 0.7;
+  max-width: 100%;
 }
