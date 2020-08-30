@@ -1,5 +1,21 @@
-* {
-  box-sizing: border-box;
+@media only screen and (max-width: 767px) {
+  .dropdown-menu {
+    background-color: rgb(45, 45, 45);
+  }
+
+  #hide-on-md {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .dropdown-menu {
+    background-color: #343a40;
+  }
+
+  #hide-on-lg {
+    display: none;
+  }
 }
 
 body {
@@ -19,12 +35,34 @@ p {
   color: white;
 }
 
+.bg-cover {
+  background-attachment: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-title {
+  font-size: 400%;
+  color: white;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.bikes-list-banner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../resources/ducati_1200.jpg)
+}
+
+.resources-banner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../resources/destijl-virago.png)
+}
+
 .padding {
   padding-bottom: 2rem;
 }
 
 .navbar {
   padding: .8rem;
+  background-color: rgb(40, 40, 40);
 }
 
 .navbar-nav li {
@@ -44,10 +82,6 @@ p {
 .overlay {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../resources/destijl-virago.png);
   background-size: cover;
-}
-
-.dropdown-menu {
-  background-color: #343a40;
 }
 
 .dropdown-item {

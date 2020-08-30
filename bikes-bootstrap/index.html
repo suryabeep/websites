@@ -12,13 +12,12 @@
 </head>
 
 <body>
-  <!-- The Navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"> </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbar-responsive">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <a class="navbar-brand h1">Bikes!</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -46,17 +45,16 @@
     </div>
   </nav>
   <!-- The banner heading -->
-  <div class="container-fluid">
+  <div class="container-fluid pt-4">
     <div class="row">
       <div class="col-xs-12 col-md-7">
-        <img style="max-width:100%" src="resources/yamaha_mt07.jpg">
+        <img style="width: 100%" src="resources/yamaha_mt07.jpg">
       </div>
       <div class="col-xs-12 col-md-5" style="display: flex; flex-direction: column; justify-content: center">
         <h1 class="display-4"> Bikes from the Shed </h1>
         <p> I'm a UIUC student who has nothing better to do with his time than to try to make another custom motorcycle aggregator site. Content is mostly stolen from Bike Exif</p>
         <div style="display: flex; justify-content: center">
-          <button type="button" class="btn btn-outline-light btn-lg>" style="margin: 10px">View the list
-          </button>
+          <a href="bikes-list.html" class="btn btn-outline-light btn-md" style="margin: 10px">View the List</a>
           <a href="resources.html" class="btn btn-primary" style="margin: 10px">Learn about building your own</a>
         </div>
       </div>
@@ -68,19 +66,19 @@
     <hr class="my-4">
     <p class="pb-4">They're quick, they look awesome, they're fuel efficient, they're fun, and if you live in California or any country that doesn't suck, you can split through traffic and watch the cagers wish they were as cool as you.<br>Seriously, my little sport bike gets 65 mpg even if I thrash the thing - why are you still driving that big ugly SUV? You could get a Prius and have the same environmental impact, but you'd be driving a Prius :(</p>
     <div class="row padding">
-      <div class="col-md-4">
+      <div class="col-md-4 padding">
         <a href="https://www.bikeexif.com/turbocharged-royal-enfield-himalayan-scrambler" target="_blank">
           <img src="resources/turbo_himalayan.jpg" id="homepage-bikes">
           <p class="carousel-caption testing">Turbocharged Himalayan</p>
         </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 padding">
         <a href="https://www.bikeexif.com/custom-bmw-r80-motorcycle">
           <img src="resources/r80_desert.jpg" id="homepage-bikes">
           <p class="carousel-caption">BMW R80 Desert Sled</p>
         </a>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 padding">
         <a href="https://www.bikeexif.com/yamaha-mt07-kit-mods-deus">
           <img src="resources/deus_mt07.jpg" id="homepage-bikes">
           <p class="carousel-caption">Yamaha MT07 by Deus Ex</p>
