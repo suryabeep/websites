@@ -19,11 +19,35 @@ a {
 }
 
 a:hover {
-  color: #fcba03;
+  color: #E69509;
 }
 
 .container-fluid {
   width: 75%
+}
+
+.newsletter-body {
+  width: 50%;
+}
+
+.edition-container,
+.email-container {
+  width: 100%;
+  padding: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.edition-container>h4 {
+  text-decoration: none;
+  color: white;
+}
+
+.edition-container {
+  background-color: rgb(128, 128, 128);
+}
+
+.edition-container:hover {
+  background-color: rgb(100, 100, 100);
 }
 
 #nav-title {
@@ -34,12 +58,19 @@ a:hover {
   background-color: rgb(40, 40, 40);
 }
 
-.jumbotron, .jumbotron-fluid{
+.nav-item {
+  padding-left: 2rem;
+}
+
+.jumbotron,
+.jumbotron-fluid {
   padding: 8rem 0 8rem 0;
   margin-bottom: 0;
 }
 
-#newsletter, #contact, #essays {
+#newsletter,
+#contact,
+#essays {
   background-color: rgb(220, 220, 220);
   padding: 4rem 0 4rem 0;
 }
