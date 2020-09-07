@@ -87,6 +87,10 @@ p {
 .dropdown-item {
   color: white;
 }
+  
+#bike-row {
+  padding-bottom: 6rem;
+}  
 
 .bike-img {
   max-width: 100%;
