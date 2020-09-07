@@ -88,33 +88,24 @@ p {
   color: white;
 }
 
-/* Bike Cards - to be removed eventually*/
-.bike-card {
-  width: 100%;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: rgb(90, 90, 90);
-  margin-bottom: 20px;
+.bike-img {
+  max-width: 100%;
 }
 
-.bike-card-body {
-  padding: 15px;
+.bike-link:hover {
   color: white;
+  text-decoration-line: none;
 }
 
-.bike-card>img {
-  padding: -15px;
-}
-
-.bike-card:hover {
-  background-color: rgb(100, 100, 100);
+.bike-text {
+  padding: 0 4rem 0 4rem;
 }
 
 /* Carousel */
 .carousel-inner img {
   width: 100%;
   height: 100%;
-  margin-bottom: 3em;
+  margin-bottom: 2rem;
 }
 
 .carousel-caption {
