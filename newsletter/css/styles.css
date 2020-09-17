@@ -30,6 +30,17 @@ a:hover {
   width: 50%;
 }
 
+.article-box, .post-box {
+  text-align: left;
+  padding-bottom: 4rem;
+}
+
+.post-img {
+  max-width: 100%;
+  max-height: 75%;
+  padding-bottom: 1rem;
+}
+
 .edition-container,
 .email-container {
   width: 100%;
@@ -47,7 +58,7 @@ a:hover {
 }
 
 .edition-container:hover {
-  background-color: rgb(100, 100, 100);
+  background-color: #fcba03;
 }
 
 #nav-title {
@@ -69,14 +80,14 @@ a:hover {
 }
 
 #newsletter,
-#contact,
-#essays {
+#contact {
   background-color: rgb(220, 220, 220);
   padding: 4rem 0 4rem 0;
 }
 
-#essays {
+#articles {
   background-color: rgb(180, 180, 180);
+  padding: 4rem 0 4rem 0;
 }
 
 /* Carousel */
