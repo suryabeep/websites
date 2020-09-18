@@ -1,0 +1,80 @@
+@media only screen and (max-width: 767px) {
+  #hide-on-md {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #hide-on-lg {
+    display: none;
+  }
+}
+
+* {
+  font-family: "Times New Roman"; /* The font applied across the entire site*/
+}
+
+a {
+  color: #7D5C01; /* The color of any link on the site*/
+}
+
+a:hover {
+  color: #E69509; /* The color of links when you hover over them*/
+}
+
+.container-fluid {
+  width: 75% /* This prevents content from spreading all the way across the screen. Creates whitespace, which looks nice */
+}
+
+.home {
+  padding-top: 4rem;
+}
+
+.post-box{
+  text-align: left;
+  padding-bottom: 4rem;
+}
+
+.post-img {
+  width: 100%; /* this forces every image to take up the full width of the column*/
+  max-height: 75%; /* This ensures that an image doesn't become massive */
+  padding-bottom: 1rem;
+}
+
+.post-img-container {
+  align-content: center;
+  padding-bottom: 4rem;
+}
+
+.contact, .post {
+  padding-top: 8rem;
+  max-width: 50%;
+}
+
+.cheading-divider {
+  width: 50%;
+}
+
+#nav-title {
+  color: #fcba03;
+}
+
+.navbar-dark {
+  background-color: rgb(40, 40, 40);
+}
+
+.nav-item {
+  padding-left: 2rem;
+}
+
+.jumbotron,
+.jumbotron-fluid {
+  padding: 8rem 0 8rem 0;
+  margin-bottom: 0;
+  background-color: #fcba03 /* The yellow color on the home banner title*/
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
