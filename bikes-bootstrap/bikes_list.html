@@ -9,6 +9,44 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <title>Bikes!</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+      console.log("start of function")
+
+      $.getJSON('resources/bikes-list.json', function(data) {         
+        console.log("started the json function")
+        let text = ""
+        bikes = data.bikes
+        console.log(bikes)
+        for(let i = 0; i < bikes.length; i++)
+        {
+          text += `
+            <a href="https://www.bikeexif.com/bmw-r80gs-paris-dakar-restomod" target="_blank" class="bike-link">
+              <div class="row padding" id="bike-row">
+                <div class="col-md-5">
+                  <img src="${bikes[i].img_src}" class="img-fluid col col-xs-6 h-100">
+                </div>
+                <div class="col-md-7 bike-text">
+                  <h2 class="display-4"> ${bikes[i].title} </h2>
+                  <p> ${bikes[i].text} ...</p>
+                </div>
+              </div>
+            </a>
+          `
+        }
+        
+
+        document.getElementById("bike-cards").innerHTML = text;
+
+      })
+      console.log("end of func")
+    });
+    
+    
+  </script>
 </head>
 
 <body>
@@ -65,90 +103,7 @@
     </div>
   </div>
   <!-- Bike cards -->
-  <div clas="container-fluid" style="padding-top: 4rem;">
-    <a href="https://www.bikeexif.com/ducati-600sl-pantah" target="_blank" class="bike-link">
-      <div class="row padding" id="bike-row">
-        <div class="col-md-5">
-          <img src="resources/ducati_pantah.jpg" class="img-fluid col col-xs-6 h-100 bike-img">
-        </div>
-        <div class="col-md-7 bike-text">
-          <h2 class="display-4"> Ducati Pantah cafe racer </h2>
-          <p> If there’s something missing from Ducati’s current lineup, it’s a modern cafe racer with strong ties to the past. Sure, there’s the oddly named Scrambler Cafe Racer—but that submodel doesn’t evoke as much nostalgia as a SportClassic or MH900e. What Ducati really needs is something in the same vein as this magnificent Ducati 600SL Pantah.
-            <br> <br>
-            Built by Ruamachines and based on a 1982 Ducati 600SL Pantah, it’s an effortlessly cool cafe racer with a better-than-factory vibe. Highlights include Italian colors, upgraded suspension, and a minimalist design that puts the unique frame and Desmodromic L-twin motor on full display ...</p>
-        </div>
-      </div>
-    </a>
-    <a href="https://www.bikeexif.com/bmw-r80gs-paris-dakar-restomod" target="_blank" class="bike-link">
-      <div class="row padding" id="bike-row">
-        <div class="col-md-5">
-          <img src="resources/bmw_r80gs.jpg" class="img-fluid col col-xs-6 h-100">
-        </div>
-        <div class="col-md-7 bike-text">
-          <h2 class="display-4"> BMW R80 GS 'Africa Shox' </h2>
-          <p> Modern Dakar bikes are lightweight, sophisticated off-roaders, with a maximum capacity of 450cc. But the early days of the rally were dominated by mammoth desert racers—like the mighty BMW R80G/S, which racked up four wins in the 80s.
-            <br><br>
-            This immaculate 1982 model is a restomod owned by Mark Johnston, and it’s a spectacular homage to the Dakar-winning days of the Gelände/Straße. Remarkably, it’s only Mark’s second build: we featured his first last year, and when we teased a shot of this R80G/S alongside, readers insisted on seeing more ...
-          </p>
-        </div>
-      </div>
-    </a>
-    <a href="https://www.bikeexif.com/honda-nx650-dominator-street-tracker" target="_blank" class="bike-link">
-      <div class="row padding" id="bike-row">
-        <div class="col-md-5">
-          <img src="resources/honda_dominator.jpg" class="img-fluid col col-xs-6 h-100">
-        </div>
-        <div class="col-md-7 bike-text">
-          <h2 class="display-4"> Honda NX650 Dominator</h2>
-          <p> The major manufacturers are constantly mining the custom scene to produce stylish new motorcycles, so it’s getting harder for riders to choose between stock and custom. New bikes are looking better than ever—and they mostly perform well right out the box, too.
-            <br><br>
-            But custom still trumps stock in many ways, and some riders prefer the simplicity of older machines to the tech wizardry of contemporary motorcycles. This steezy Honda Dominator from HB-Custom in Germany is physical proof—because the owner sold his modern bike to make space for the build ...</p>
-        </div>
-      </div>
-    </a>
-    <a href="https://www.vagabund-moto.com/customs" target="_blank" class="bike-link">
-      <div class="row padding" id="bike-row">
-        <div class="col-md-5">
-          <img src="resources/vagabund-dirtbike-cropped.png" class="img-fluid col col-xs-6 h-100">
-        </div>
-        <div class="col-md-7 bike-text">
-          <h2 class="display-4">Vagabund Dirtbike</h2>
-          <p class="card-text">There are some builders who have a very ‘freestyle’ approach, grinding and hammering away at metal until things look right. And then there are the builders who plan everything meticulously beforehand, getting the look and the fit millimeter-perfect—and using technology to the max.
-            <br><br>
-            Paul Brauchart and Philipp Rabl of Austria’s Vagabund Moto fall into the modernist camp. Their output is precise rather than prodigious, and they’ve just finished the sleekest Honda NX650 Dominator we’ve ever seen.
-            <br><br>
-            “We were trying to generate a minimalist look while producing a fully functional ‘offroad’ bike,” Paul tells us. “Which meant having all the necessary parts for being street legal in Austria.” ...</p>
-        </div>
-      </div>
-    </a>
-    <a href="https://www.destijlmoto.com/" target="_blank" class="bike-link">
-      <div class="row padding" id="bike-row">
-        <div class="col-md-5">
-          <img src="resources/destijl-virago.png" class="img-fluid col col-xs-6 h-100">
-        </div>
-        <div class="col-md-7 bike-text">
-          <h2 class="display-4">De Stijl Yamaha Virago</h2>
-          <p class="card-text">Introduced in 1981, the Yamaha XV750 Virago was the company’s first foray into the market for V-twin cruisers, featuring mono-shock rear suspension, shaft-drive, and an air-cooled 75° V-twin producing 55 horsepower. While the bike was enough of a threat to the two-wheeled status quo that Harley-Davidson pushed for a 1983 tariff on 750+cc imported motorcycles, it’s safe to assume that no one reckoned the Virago would be resurrected 40 years later in the hands of custom builders like Sean Hogan of Portland’s de stijl moto.
-            <br><br>
-            We first came across Sean’s work at the 2019 One Moto Show, where his 1983 Virago 750 custom immediately caught our attention — as did Sean’s no-excuses attitude and philosophy ...
-          </p>
-        </div>
-      </div>
-    </a>
-    <a href="https://www.autofabrica.com/type-7e" target="_blank" class="bike-link">
-      <div class="row padding" id="bike-row">
-        <div class="col-md-5">
-          <img src="resources/autofabrica-7e.jpg" class="img-fluid col col-xs-6 h-100">
-        </div>
-        <div class="col-md-7 bike-text">
-          <h2 class="display-4">Auto Fabrica Type 7E</h2>
-          <p class="card-text">At a glance, Yamaha’s re-issued SR400 is virtually indistinguishable from its vintage counterparts. Which is probably why it’s so popular. It has all the charm associated with the iconic SR designation, with the added benefits of fuel injection and ‘new bike’ reliability. A combination that led Auto Fabrica’s newest client to turn his SR400 in for a makeover.
-            <br><br>
-            Even though Bujar and his crew at the English workshop have already got a few SR builds to their name, this was their first time turning wrenches on a modern example. Still, it posed no problems: “Type 7” is as understated and classy as they come.
-          </p>
-        </div>
-      </div>
-    </a>
+  <div class="container-fluid" id="bike-cards">
   </div>
   <!-- Footer -->
   <div class="footer">
@@ -160,11 +115,7 @@
       </div>
     </div>
   </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
 </body>
 
 </html>

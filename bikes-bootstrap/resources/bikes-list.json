@@ -1,0 +1,41 @@
+{
+	"bikes": [
+
+		{
+			"img_src": "resources/ducati_pantah.jpg",
+			"link": "https://www.bikeexif.com/ducati-600sl-pantah",
+			"title": "Ducati Pantah cafe racer",
+			"text": "If there’s something missing from Ducati’s current lineup, it’s a modern cafe racer with strong ties to the past. Sure, there’s the oddly named Scrambler Cafe Racer—but that submodel doesn’t evoke as much nostalgia as a SportClassic or MH900e. What Ducati really needs is something in the same vein as this magnificent Ducati 600SL Pantah. <br> <br> Built by Ruamachines and based on a 1982 Ducati 600SL Pantah, it’s an effortlessly cool cafe racer with a better-than-factory vibe. Highlights include Italian colors, upgraded suspension, and a minimalist design that puts the unique frame and Desmodromic L-twin motor on full display"
+		},
+		{
+			"img_src": "resources/bmw_r80gs.jpg",
+			"link": "https://www.bikeexif.com/bmw-r80gs-paris-dakar-restomod",
+			"title": "BMW R80 GS 'Africa Shox'",
+			"text": "Modern Dakar bikes are lightweight, sophisticated off-roaders, with a maximum capacity of 450cc. But the early days of the rally were dominated by mammoth desert racers—like the mighty BMW R80G/S, which racked up four wins in the 80s. <br><br> This immaculate 1982 model is a restomod owned by Mark Johnston, and it’s a spectacular homage to the Dakar-winning days of the Gelände/Straße. Remarkably, it’s only Mark’s second build: we featured his first last year, and when we teased a shot of this R80G/S alongside, readers insisted on seeing more"
+		},
+		{
+			"img_src": "resources/honda_dominator.jpg",
+			"link": "https://www.bikeexif.com/honda-nx650-dominator-street-tracker",
+			"title": "Honda NX650 Dominator",
+			"text": "The major manufacturers are constantly mining the custom scene to produce stylish new motorcycles, so it’s getting harder for riders to choose between stock and custom. New bikes are looking better than ever—and they mostly perform well right out the box, too.<br><br> But custom still trumps stock in many ways, and some riders prefer the simplicity of older machines to the tech wizardry of contemporary motorcycles. This steezy Honda Dominator from HB-Custom in Germany is physical proof—because the owner sold his modern bike to make space for the build"
+		},
+		{
+			"img_src": "resources/vagabund-dirtbike-cropped.png",
+			"link": "https://www.vagabund-moto.com/customs",
+			"title": "Vagabund Dirtbike",
+			"text": "There are some builders who have a very ‘freestyle’ approach, grinding and hammering away at metal until things look right. And then there are the builders who plan everything meticulously beforehand, getting the look and the fit millimeter-perfect—and using technology to the max. <br><br> Paul Brauchart and Philipp Rabl of Austria’s Vagabund Moto fall into the modernist camp. Their output is precise rather than prodigious, and they’ve just finished the sleekest Honda NX650 Dominator we’ve ever seen. <br><br> “We were trying to generate a minimalist look while producing a fully functional ‘offroad’ bike,” Paul tells us. “Which meant having all the necessary parts for being street legal in Austria.”"
+		},
+		{
+			"img_src": "resources/destijl-virago.png",
+			"link": "https://www.destijlmoto.com/",
+			"title": "De Stijl Yamaha Virago",
+			"text": "Modern Dakar bikes are lightweight, sophisticated off-roaders, with a maximum capacity of 450cc. But the early days of the rally were dominated by mammoth desert racers—like the mighty BMW R80G/S, which racked up four wins in the 80s. <br><br> This immaculate 1982 model is a restomod owned by Mark Johnston, and it’s a spectacular homage to the Dakar-winning days of the Gelände/Straße. Remarkably, it’s only Mark’s second build: we featured his first last year, and when we teased a shot of this R80G/S alongside, readers insisted on seeing more"
+		},
+		{
+			"img_src": "resources/autofabrica-7e.jpg",
+			"link": "https://www.autofabrica.com/type-7e",
+			"title": "Auto Fabrica Type 7E",
+			"text": "At a glance, Yamaha’s re-issued SR400 is virtually indistinguishable from its vintage counterparts. Which is probably why it’s so popular. It has all the charm associated with the iconic SR designation, with the added benefits of fuel injection and ‘new bike’ reliability. A combination that led Auto Fabrica’s newest client to turn his SR400 in for a makeover. <br><br> Even though Bujar and his crew at the English workshop have already got a few SR builds to their name, this was their first time turning wrenches on a modern example. Still, it posed no problems: “Type 7” is as understated and classy as they come."
+		}
+	]
+}
