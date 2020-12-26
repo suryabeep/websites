@@ -1,0 +1,80 @@
+@media only screen and (max-width: 767px) {
+    #hide-on-md {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #hide-on-lg {
+      display: none;
+    }
+  }
+
+  @font-face {
+    font-family: thame;
+    src: url(../resources/THAME1.ttf);
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    color: #222;
+    font-family: thame
+  }
+
+  .small-logo {
+      max-height: 4rem;
+  }
+
+  .logo {
+    /* max-height: 4rem; */
+  }
+
+  .container-fluid {
+    width: 80%
+  }
+  
+  .navbar {
+    padding: .8rem;
+    background-color: #e8f1f6;
+  }
+  
+  .navbar-nav li {
+    padding-right: 1.3rem;
+  }
+  
+  .nav-link {
+    font-size: 1.1em !important;
+  }
+  
+  .padding {
+    padding-bottom: 2rem;
+  }
+  
+  .nav-pills {
+      height: 4rem;
+  }
+
+  .nav-pills > .nav-link.active{
+      background-color: #8c221c;
+  }
+
+  .nav-pills > .nav-link {
+      color: #000000;
+      padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+  
+  /*---Firefox Bug Fix --*/
+  .carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+  
+  /*--- Bootstrap Padding Fix --*/
+  [class*="col-"] {
+    padding: 1rem;
+  }
