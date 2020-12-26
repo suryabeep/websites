@@ -17,10 +17,8 @@
       console.log("start of function")
 
       $.getJSON('resources/bikes-list.json', function(data) {         
-        console.log("started the json function")
         let text = ""
         bikes = data.bikes
-        console.log(bikes)
         for(let i = 0; i < bikes.length; i++)
         {
           text += `
@@ -37,15 +35,9 @@
             </a>
           `
         }
-        
-
         document.getElementById("bike-cards").innerHTML = text;
-
       })
-      console.log("end of func")
     });
-    
-    
   </script>
 </head>
 
@@ -115,7 +107,5 @@
       </div>
     </div>
   </div>
-  
 </body>
-
 </html>
