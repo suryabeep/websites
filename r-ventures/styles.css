@@ -79,6 +79,16 @@
     background-color: rgb(180, 180, 180);
     padding: 4rem 0 4rem 0;
   }
+
+  #light-stripe {
+    background-color: rgb(220, 220, 220);
+    padding: 2rem 0 2rem 0;
+  }
+
+  #dark-stripe {
+    background-color: rgb(180, 180, 180);
+    padding: 2rem 0 2rem 0;
+  }
   
   /*---Firefox Bug Fix --*/
   .carousel-item {
