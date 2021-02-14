@@ -1,0 +1,40 @@
+@media only screen and (max-width: 767px) {
+    #title: {
+        font-size: 4rem;
+    }
+
+    #home {
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #title {
+        font-size: 6rem;
+    }
+
+    #home {
+        max-width: 75%;
+        padding: 2rem;
+    }
+}
+
+.jumbotron {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,
+                    rgba(255,255,255,0.9) 100%), url(resources/austin-map.jpg);
+    background-size: cover;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+#subtitle {
+    color:rgb(80,80, 80);
+}
